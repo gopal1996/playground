@@ -3,6 +3,7 @@
 const fruitList = ["Apple", "Orange", "Watermelon"]
 
 const fruitIterator = fruitList[Symbol.iterator]()
+const secondIterator = fruitList[Symbol.iterator]()
 const createFruitIterator = fruitList[Symbol.iterator].bind(fruitList)
 
 // console.log(Symbol.iterator)
@@ -14,16 +15,32 @@ const createFruitIterator = fruitList[Symbol.iterator].bind(fruitList)
 // console.log(fruitIterator.next())
 // console.log(fruitIterator.next())
 
-for(let value of fruitIterator) {
-    console.log(`Fruit: ${value}`)
-}
+// console.log(secondIterator.next())
+// console.log(secondIterator.next())
+// console.log(secondIterator.next())
+// console.log(secondIterator.next())
 
-let secondIterator = createFruitIterator()
+// for(let value of fruitIterator) {
+//     console.log(`Fruit: ${value}`)
+// }
 
-for(let value of secondIterator) {
-    console.log(`Fruit:: ${value}`)
-}
+// let secondIterator = createFruitIterator()
 
-for(let value of secondIterator) {
-    console.log(`Fruit::Second ${value}`)
-}
+// for(let value of secondIterator) {
+//     console.log(`Fruit:: ${value}`)
+// }
+
+// for(let value of secondIterator) {
+//     console.log(`Fruit::Second ${value}`)
+// }
+
+// console.dir(fruitList)
+
+// fruitList[Symbol.iterator] = {}
+
+// for(let value of fruitList) {
+//     console.log(value)
+// }
+
+// console.log([...fruitList])
+// console.info(fruitList.map(test => test))

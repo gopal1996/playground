@@ -8,7 +8,16 @@ const reverseIterator = function* (array) {
 
 const iterator = reverseIterator(fruits)
 
-for(let value of iterator) {
-    console.log(value)
-}
+console.log(iterator.next())
+console.log(iterator.next())
+console.log(iterator.next())
+console.log(iterator.next())
+console.log(iterator.next())
+console.log(iterator.next())
+console.log(iterator.next())
+console.log(iterator.next())
+
+// for(let value of iterator) {
+//     console.log(value)
+// }
 

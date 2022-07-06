@@ -1,11 +1,13 @@
 function* generator() {
+    console.log("One")
     yield 1;
-    console.log("One")
+    console.log("Two")
     yield 2;
-    console.log("One")
+    console.log("Three")
 }
 
 const iterator = generator()
 
+console.log(iterator.next())
 console.log(iterator.next())
 console.log(iterator.next())

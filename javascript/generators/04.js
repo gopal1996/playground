@@ -20,7 +20,11 @@ const reverseIterator = function* (array) {
     }
 }
 
-for(let value of reverseIterator(fruits)) {
-    console.log(value)
-}
+// for(let value of reverseIterator(fruits)) {
+//     console.log(value)
+// }
+
+let iterator = reverseIterator(fruits)
+console.log(iterator.next())
+console.log(iterator.next())
 

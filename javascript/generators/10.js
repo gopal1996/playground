@@ -1,6 +1,6 @@
-// function* range(start, end) {
-//     while(start < end) yield start++
-// }
+function* range(start, end) {
+    while(start < end) yield start++
+}
 
 // for(let value of range(0,10)){
 //     console.log(value)

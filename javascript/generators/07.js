@@ -18,3 +18,14 @@ for(let value of iterator) {
     console.log(value)
 }
 
+// console.log(iterator.next())
+// console.log(iterator.next())
+
+const secondReverseIterator = function* (array) {
+    yield* shoutIterator(array[0])
+}
+
+const secondIterator = secondReverseIterator(fruits)
+// console.log(secondIterator.next().value.next())
+
+// console.log(secondIterator.next())
